@@ -21,3 +21,7 @@
 
 ```bash
 pip install -r requirements.txt
+
+
+安装ffmpeg示例 (Windows)：
+choco install ffmpeg  # Windows (需管理员权限)
