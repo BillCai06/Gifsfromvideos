@@ -25,3 +25,31 @@ pip install -r requirements.txt
 
 安装ffmpeg示例 (Windows)：
 choco install ffmpeg  # Windows (需管理员权限)
+```
+
+## 使用方法
+
+1. 将脚本文件和你要转换的所有视频文件放在同一文件夹内。
+2. 根据需要可以调整脚本顶部的参数配置，例如：
+
+   - \`MAX\_GIF\_SIZE\_MB\`：生成的 GIF 动图最大允许大小（单位：MB）。
+   - \`MAX\_WIDTH\`：GIF 动图的最大宽度（单位：像素）。
+   - \`GIF\_FPS\`：生成 GIF 的帧率。
+3. 运行脚本：
+
+\`\`\`bash
+
+python gifscirpt.py
+
+\`\`\`
+
+脚本会自动遍历文件夹内的所有视频文件，抽取指定帧，并生成对应的 GIF 文件。如果目标 GIF 已存在，则会跳过该文件。
+
+## 注意事项
+
+- 若视频文件存在播放或编码问题，脚本会自动调用 ffmpeg 进行修复，但这需要系统正确安装 ffmpeg。
+- 生成的 GIF 动图大小可能超过设定的目标大小，请根据需要调整参数或后续压缩 GIF。
+
+## 许可
+
+本项目采用 [MIT License](LICENSE) 许可，欢迎使用和贡献代码！
