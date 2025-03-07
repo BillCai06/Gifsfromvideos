@@ -50,5 +50,5 @@ python gifscirpts.py
 
 ## 许可
 
-本项目采用 [MIT License](LICENSE) 许可，欢迎使用和贡献代码！
+本项目采用 MIT License 许可，欢迎使用和贡献代码！
 
